@@ -11,7 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{array} 
+\usepackage{array}
 \usepackage{fontawesome}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
@@ -51,12 +51,21 @@
 \newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
 \newcommand{\experience}[1]{
     \begin{tikzpicture}[remember picture]
-    \node (#1) [resumecolor,circle,fill,inner sep=3pt]{};
+        \node (#1) [resumecolor,circle,fill,inner sep=3pt]{};
     \end{tikzpicture}
 }
-\newcommand{\resumeSubheading}[5]{\vspace{-2pt}\item[\experience{#1}]\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#2} & #3 \\ \textit{\small#4} & \textit{\small #5} \\ \end{tabular*}\vspace{1pt}}
-\newcommand{\resumeSubSubheading}[2]{\item \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textit{\small#1} & \textit{\small #2} \\ \end{tabular*}\vspace{-7pt}}
-\newcommand{\resumeProjectHeading}[2]{\item \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubheading}[5]{
+    \vspace{-2pt}
+    \item[\experience{#1}]
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+             \textbf{#2} & #3 \\ \textit{\small#4} & \textit{\small #5} \\
+        \end{tabular*}\vspace{1pt}}
+\newcommand{\resumeSubSubheading}[2]{\item \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+                                               \textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+                                                \small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}}
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -72,86 +81,89 @@
 \begin{document}
 %----------HEADING----------
 \begin{center}
-     \textbf{\Huge\scshape\color{resumecolor} Rama Shankar} \\
-    \textbf{\Large Senior Software Engineer} \\
-    \textit{\Large B.Tech Computer Science Engineering} \vspace{-1pt} \\
+\textbf{\Huge\scshape\color{resumecolor} Rama Shankar} \\
+\textbf{\Large Senior Software Engineer} \\
+\textit{\Large B.Tech Computer Science Engineering} \vspace{-1pt} \\
 \end{center}
 
 \begin{tabular*}{\textwidth}{@{}l@{\hspace*{\fill}}c@{\hfill}r@{}}
-    \fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
-        \small 
-        \textcolor{resumecolor}{\faPhone}\hspace*{0.2em} +91-9716.299.295 \hspace*{\fill} 
-        \textcolor{resumecolor}{\faEnvelope}\hspace*{0.2em} \href{mailto:id.ramashankar@gmail.com}{id.ramashankar@gmail.com} \hspace*{\fill} 
-        \textcolor{resumecolor}{\faLinkedin}\hspace*{0.2em} \href{https://linkedin.com/in/rshankar-in}{linkedin.com/in/rshankar-in}
-    }}
+\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
+\small
+\textcolor{resumecolor}{\faPhone}\hspace*{0.2em} +91-9716.299.295 \hspace*{\fill}
+\textcolor{resumecolor}{\faEnvelope}\hspace*{0.2em} \href{mailto:id.ramashankar@gmail.com}{id.ramashankar@gmail.com} \hspace*{\fill}
+\textcolor{resumecolor}{\faLinkedin}\hspace*{0.2em} \href{https://linkedin.com/in/rshankar-in}{linkedin.com/in/rshankar-in}
+}}
 \end{tabular*}
 
 \begin{itemize}[label=, left=0pt, itemsep=-5pt]
-    \item \textbf{Full-stack Software Engineer} with \textbf{10+ years} of expertise in \textbf{Java, Spring, Angular, Python, AWS}, and \textbf{JavaScript}.
-    Experienced in \textbf{microservices} and \textbf{distributed systems}, contributing to complex software projects.
-    \item Proven success in \textbf{Agile} environments, implementing \textbf{TDD}, and excelling in \textbf{REST Web Services} and \textbf{Design Patterns}.
-    Ability to quickly learn and adapt to new environments and technologies.
+\item \textbf{Full-stack Software Engineer} with \textbf{10+ years} of expertise in \textbf{Java, Spring, Angular, Python, AWS}, and \textbf{JavaScript}.
+Experienced in \textbf{microservices} and \textbf{distributed systems}, contributing to complex software projects.
+Proven success in \textbf{Agile} environments, implementing \textbf{TDD}, and excelling in \textbf{REST Web Services} and \textbf{Design Patterns}.
+Ability to quickly learn and adapt to new environments and technologies.
 \end{itemize}\vspace{-5pt}
 
-\section{Experience} 
-    \resumeSubHeadingListStart
-        \resumeSubheading {a}
-    {GoDaddy } {2022 -- Present}
-    {SDE - 3 }{Gurgaon, India }
-    \resumeItemListStart
-        Developing the next-gen \textbf{E-commerce System}, leveraging \textbf{AWS cloud} for pricing and Discounting module.
-        \textbf{Role and Responsibilities:} Scrum master, requirement analysis, contributing to design decisions, led development efforts, and ensuring system monitoring and maintenance.
-        \item Engineered a data pusher service for seamless migration from legacy to new systems.
-        \item Devised a data integrity test suite to ensure accuracy.
-        \item Developed a system ensuring consistent pricing for individual customers over time.
-    \resumeItemListEnd
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading {a}
+{GoDaddy } {2022 -- Present}
+{SDE - 3 }{Gurgaon, India }
+\resumeItemListStart
+Developing the next-gen \textbf{E-commerce System}, leveraging \textbf{AWS cloud} for pricing and Discounting module.
+\textbf{Role and Responsibilities:} Scrum master, requirement analysis, contributing to design decisions, leading development efforts, and ensuring system monitoring and maintenance.
+\item Developed a data pusher service for seamless migration from legacy to new systems. Developed a data integrity test suite to ensure accuracy.
+\item Developed a system ensuring consistent pricing for individual customers over time.
+\resumeItemListEnd
 
 
-        \resumeSubheading{b}
-            {Ericsson Research and Development}{2018 -- 2022}
-            {Senior Software Engineer}{Gurgaon, India}
-            \resumeItemListStart
-                Worked on \textbf{Revenue Manager}, a cloud-native, real-time, catalog-driven solution for the telecom industry, which has all the required features like charging, billing, customer management, etc. \textbf{Role and Responsibilities are requirement analysis, design, coding, and automation testing using Junit and integration test, peer code review}
-                
-                \resumeItem
-                {Contributed to the development of product features for a Telecom project, involving tasks such as design documentation, coding, and testing for system/subsystem. Additionally, provided support for product customization and troubleshooting.}
-                \resumeItem
-                {Enhanced API performance by 80 percent, resolving initial unresponsiveness with 5000 records.}
-                \resumeItem
-                {Implemented a GDPR system, incorporating the masking of sensitive data in logs.}
-                \resumeItem
-                {Executed customer data migration across multiple sites.}
-            \resumeItemListEnd
-        
-        \resumeSubheading{c}
-            {VirtusaPolaris}{2016 -- 2017}
-            {Associate Consultant}{Gurgaon, India}
-            \resumeItemListStart
-                \resumeItem
-                {Contributed to the development of an ODS (a normalized database), playing a crucial role in its design and implementation.}
-                \resumeItem
-                {Designed and implemented report generation features, allowing customers to conveniently download their reports on a monthly and annual basis.}
-            \resumeItemListEnd
-        
-        \resumeSubheading{c}
-            {Oodles Technologies}{2013 -- 2016}
-            {Lead Developer}{Gurgaon, India}
-            \resumeItemListStart
-                \textbf{CaptionLabs:} Traffic management web app. Worked on modules: work order, task tracker, invoicing, and payment. 
-                \textbf{Media Catapult:} Video streaming and content management web. Created REST APIs for IPTVS communication, analytics, and media scheduling. Implemented 24x7 virtual live broadcast streaming and live streaming.
-                \textbf{Contributed to product design, developed backend and frontend, maintained deployment server, and assisted junior developers}.
-                
-                \resumeItem
-                {Led a team in the development of a peer-to-peer video communication application.
-                Developed a video content management and streaming application, including features for video uploading via FTP, resumable upload, VOD, and live streaming.
-                Developed the creation of a scheduling calendar for VOD.}
-                \resumeItem
-                {Built an online job traffic management application from the ground up, focusing on features such as job alignment, job tracking, email templates, notifications, and payment gateway integration.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-    \begin{tikzpicture}[remember picture,overlay]
-        \draw[gray, shorten >=1mm, shorten <=1mm] (a)-- (b);
-        \draw[gray, shorten >=1mm, shorten <=1mm] (b)-- (c);
-    \end{tikzpicture}
+\resumeSubheading{b}
+{Ericsson Research and Development}{2018 -- 2022}
+{Senior Software Engineer}{Gurgaon, India}
+\resumeItemListStart
+Worked on \textbf{Revenue Manager}, a cloud-native, real-time, catalog-driven solution for the telecom industry, which has all the required features like charging, billing, customer management, etc. \textbf{Role and Responsibilities are requirement analysis, design, coding, and automation testing using Junit and integration test, peer code review}
+\resumeItem
+{Enhanced API performance by 80 percent, resolving initial unresponsiveness with 5000 records.}
+\resumeItem
+{Added support of GDPR, incorporating the masking of sensitive data in logs.}
+\resumeItem
+{Implemented support of customer data migration APIs across multiple sites.}
+\resumeItemListEnd
+
+\resumeSubheading{c}
+{Iris Software Inc}{2017 -- 2018}
+{Technical Consultant}{Noida, India}
+\resumeItemListStart
+{Worked as consultant for banking project. Developed validation features for the product. Written automation test by using Junit and Integration testing..}
+\resumeItemListEnd
+
+\resumeSubheading{d}
+{VirtusaPolaris}{2016 -- 2017}
+{Associate Consultant}{Gurgaon, India}
+\resumeItemListStart
+{Contributed to the development of an ODS (a normalized database), playing a crucial role in its design and implementation.}
+{Designed and implemented report generation features, allowing customers to conveniently download their reports on a monthly and annual basis.}
+\resumeItemListEnd
+
+\resumeSubheading{e}
+{Oodles Technologies}{2013 -- 2016}
+{Lead Developer}{Gurgaon, India}
+\resumeItemListStart
+\textbf{CaptionLabs:} Traffic management web app. Worked on modules: work order, task tracker, invoicing, and payment.
+\textbf{Media Catapult:} Video streaming and content management web. Created REST APIs for IPTVS communication, analytics, and media scheduling. Implemented 24x7 virtual live broadcast streaming and live streaming.
+\textbf{Contributed to product design, developed backend and frontend, maintained deployment server, and assisted junior developers}.
+
+\resumeItem
+{Led a team in the development of a peer-to-peer video communication application.
+Developed a video content management and streaming application, including features for video uploading via FTP, resumable upload, VOD, and live streaming.
+Developed the creation of a scheduling calendar for VOD.}
+\resumeItem
+{Built an online job traffic management application from the ground up, focusing on features such as job alignment, job tracking, email templates, notifications, and payment gateway integration.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\begin{tikzpicture}[remember picture,overlay]
+\draw[gray, shorten >=1mm, shorten <=1mm] (a)-- (b);
+\draw[gray, shorten >=1mm, shorten <=1mm] (b)-- (c);
+\draw[gray, shorten >=1mm, shorten <=1mm] (c)-- (d);
+\draw[gray, shorten >=1mm, shorten <=1mm] (d)-- (e);
+\end{tikzpicture}
 
 \end{document}
